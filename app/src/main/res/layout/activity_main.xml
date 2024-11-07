@@ -19,14 +19,39 @@
 
     <ImageView
         android:id="@+id/imageViewNumber"
-        android:layout_width="204dp"
-        android:layout_height="189dp"
+        android:layout_width="0dp"
+        android:layout_height="127dp"
         app:layout_constraintBottom_toTopOf="@+id/textViewP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintEnd_toStartOf="@+id/znac"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867"
+        app:layout_constraintVertical_bias="0.813"
+        app:srcCompat="@drawable/n2" />
+
+    <ImageView
+        android:id="@+id/znac"
+        android:layout_width="0dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewP"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNumber2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813"
+        app:srcCompat="@drawable/n2" />
+
+    <ImageView
+        android:id="@+id/imageViewNumber2"
+        android:layout_width="0dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/znac"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813"
         app:srcCompat="@drawable/n2" />
 
     <EditText
